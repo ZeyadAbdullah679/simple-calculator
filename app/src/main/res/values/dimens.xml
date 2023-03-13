@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="paddingLarge">24dp</dimen>
+    <dimen name="textNormal">26sp</dimen>
+    <dimen name="buttonTextSize">26sp</dimen>
+    <dimen name="normalMargin">16dp</dimen>
+    <dimen name="buttonSize">64dp</dimen>
+    <dimen name="textBig">36sp</dimen>
+    <dimen name="smallMargin">24dp</dimen>
 </resources>
