@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="calcText">0</string>
-    <string name="resultText">0.0</string>
+    <string name="resultText" />
     <string name="plus">+</string>
     <string name="multiply">*</string>
     <string name="divide">/</string>
