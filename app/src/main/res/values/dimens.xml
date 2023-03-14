@@ -7,4 +7,5 @@
     <dimen name="buttonSize">64dp</dimen>
     <dimen name="textBig">36sp</dimen>
     <dimen name="smallMargin">24dp</dimen>
+    <dimen name="paddingNormal">16dp</dimen>
 </resources>

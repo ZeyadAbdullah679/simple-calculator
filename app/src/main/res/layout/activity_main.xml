@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:padding="@dimen/paddingLarge"
+    android:padding="@dimen/paddingNormal"
     tools:context=".MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -25,8 +25,7 @@
     <TextView
         android:id="@+id/textview_result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_height="70dp"
         android:gravity="end"
         android:maxLength="17"
         android:text="@string/resultText"

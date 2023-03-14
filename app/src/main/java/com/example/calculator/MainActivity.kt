@@ -7,19 +7,19 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var buttonPlus: Button
-    lateinit var buttonMinus: Button
-    lateinit var buttonMultiplication: Button
-    lateinit var buttonDiv: Button
-    lateinit var buttonReminder: Button
-    lateinit var buttonEqual: Button
-    lateinit var buttonSign: Button
-    lateinit var textNumber: TextView
-    lateinit var clearButton: Button
-    lateinit var buttonPoint: Button
+    private lateinit var buttonPlus: Button
+    private lateinit var buttonMinus: Button
+    private lateinit var buttonMultiplication: Button
+    private lateinit var buttonDiv: Button
+    private lateinit var buttonReminder: Button
+    private lateinit var buttonEqual: Button
+    private lateinit var buttonSign: Button
+    private lateinit var textNumber: TextView
+    private lateinit var clearButton: Button
+    private lateinit var buttonPoint: Button
 
-    var firstNumber = 0.0
-    var currentOperation: Operation? = null
+    private var firstNumber = 0.0
+    private var currentOperation: Operation? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun preformOperation(): Double {
         val secondNumber = textNumber.text.toString().toDouble()
-        return when (currentOperation) {
+        val result = when (currentOperation) {
             Operation.PLUS -> firstNumber + secondNumber
             Operation.MINUS -> firstNumber - secondNumber
             Operation.DIV -> firstNumber / secondNumber
@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
             Operation.SIGN -> secondNumber * -1
             null -> secondNumber
         }
+        currentOperation = null
+        return result
     }
 
     private fun prepareOperation(op: Operation) {
